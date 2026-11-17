@@ -3,7 +3,7 @@ name = "SigmaOS-android-emulator2"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "android-emulator2 component"
+description = "Android Emulator emulator compatibility layer for SigmaOS"
 upstream = []
 
 [contract]
