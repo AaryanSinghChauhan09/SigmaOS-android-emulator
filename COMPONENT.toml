@@ -1,16 +1,16 @@
 [component]
-name = "SigmaOS-android-emulator2"
+name = "SigmaOS-android-emulator"
 tier = 2
 stability = "beta"
-language = "rust"
-description = "Android emulator profile manager with device specs and CPU architecture options"
+language = "shell"
+description = "SigmaOS integration for Android emulator: package management, config deployment, and CLI helpers."
 upstream = []
 
 [contract]
-provides = ["emulator-profiles", "avd-management"]
+provides = ["app-manager:android-emulator"]
 depends_on = []
 
 [maturity]
 status = "Implemented"
-test_evidence = "cargo test --offline unit tests pass"
-next_milestone = "AVD launch integration and QEMU binding"
+test_evidence = "test.sh: syntax + metadata + isolated-HOME lifecycle checks"
+next_mestone = "Per-app config polish"
